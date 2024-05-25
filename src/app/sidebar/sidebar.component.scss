@@ -1,0 +1,38 @@
+.sidebar{
+    background-color: #04293A;
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 0;
+
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+@media (max-width:768){
+    .sidebar{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .sidebar img{
+        width: 20px;
+    }
+}
