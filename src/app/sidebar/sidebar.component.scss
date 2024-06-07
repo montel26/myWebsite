@@ -12,11 +12,19 @@
 .bi{
     color: #064663;
     font-size: 5rem;
+    padding-left: 4px;
+    padding-top: 3rem;
+    padding-bottom: 33px;
+    
+}
+.bi:hover{
+    color:#ECB365ff;
+    background-color: #041C32ff;
+    border-radius: 2rem;
+    
 }
 
-// backgriud for projects is 041C32
-// icon hovver = EBB265
-// icon basic color = 064663
+
 .sidebar ul{
     list-style-type: none;
     padding: 0;
