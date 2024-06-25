@@ -1,5 +1,25 @@
 
 // make a few changes when writing
-body{
-    background-color: #041C32ff;
+#typed-output {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.5em;
+    color: #041C32;
+  }
+h1{
+    color:#ECB365ff;
+}
+
+p{
+  font-size: 160%;
+  // color: black;
+}
+
+.info{
+  margin-top:12%;
+  margin-left: 14%;
+}
+
+html{
+  // background-color: #041C32;
 }
