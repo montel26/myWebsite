@@ -11,7 +11,43 @@ p{
   margin-top:3%;
   margin-left: 50%;
 }
-.skills{
+.skills-container{
   margin-top:3%;
-  margin-left: 50%;
+  margin-left: 30%;
+  background-color: #041C32ff;
+
+}
+.heading{
+  margin-left: 30%;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #041C32ff;
+  // border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 8rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+.skill i {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #555;
+}
+.skill span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
 }
