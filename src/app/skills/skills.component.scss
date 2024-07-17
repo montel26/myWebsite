@@ -4,7 +4,7 @@ h1{
 
 p{
   font-size: 160%;
-  // color: black;
+  
 }
 
 .info{
@@ -14,7 +14,7 @@ p{
 .skills-container{
   margin-top:3%;
   margin-left: 5%;
-  // background-color: #041C32ff;
+
 
 }
 .heading{
@@ -25,13 +25,10 @@ p{
   grid-template-columns: repeat(3, 1fr);
   margin-left: 10rem;
   margin-right: 10rem;
-  // justify-content: center;
   gap: 20px;
 }
 
 .skill {
-  // background-color: #041C32ff;
-  // border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   width: 8rem;
