@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { InputTextareaModule } from 'primeng/inputtextarea';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -9,6 +10,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 
+import { ButtonModule } from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +19,13 @@ import { HomeComponent } from './home/home.component';
     ContactComponent,
     SkillsComponent,
     SidebarComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputTextareaModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
