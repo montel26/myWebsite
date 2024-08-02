@@ -2,3 +2,33 @@
 h1{
     color:#ECB365ff;
 }
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.form-container input[type="text"] ,
+.form-container input[type="email"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 4px;
+    background-color: #064663;
+}
+.form-container textarea {
+    background-color: #064663;
+    color: #fff;
+}
+.form-container input[type="submit"] {
+    background-color: #064663;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #033d50;
+}

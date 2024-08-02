@@ -2,40 +2,19 @@
     <h1>Contact Me</h1><br><br><br>
 
     <!-- <input type="text" pInputText class="p-inputtext-lg">  -->
-    <div class="message">
-        <div class="nameBlock">
-            <textarea 
-            rows="5"
-            cols="30" 
-            pInputTextarea 
-            [autoResize]="true">
-            </textarea>
-
-        </div>
-        <br>
-        <div class="email">
-            <textarea 
-                rows="5"
-                cols="30" 
-                pInputTextarea 
-                [autoResize]="true">
-            </textarea>  
-        </div>
-        <br>
-        <div class="MessageMe">
-
-            <textarea 
-            label="Message me"
-            rows="5"
-            cols="30" 
-            pInputTextarea 
-            [autoResize]="true">
-            </textarea>
-        </div>
-        <br><br><br>
-        <div class="Btn">
-            <!-- Ill have to do it myself.  -->
-        </div>
+    <div class="form-container">
+        <form action="#">
+            
+            <input type="text" id="name" name="name" placeholder="Name">
+            <br><br>
+            
+            <input type="email" id="email" name="email" placeholder="Email">
+            <br><br>
+           
+            <textarea id="message" name="message" placeholder="Message" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 </body>
 
