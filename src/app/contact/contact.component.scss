@@ -1,10 +1,23 @@
 
 h1{
     color:#ECB365ff;
+    font-size: 250%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
 }
 .form-container {
-    max-width: 400px;
-    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    align-items:flex-start;
+    margin: auto;
+    display: flex;
+}
+.form-container div{
+    margin: 0;
+    padding: 0;
+    width: 50%;
 }
 .form-container input[type="text"] ,
 .form-container input[type="email"],
@@ -31,4 +44,30 @@ h1{
 }
 .form-container input[type="submit"]:hover {
     background-color: #033d50;
+}
+
+#contact{
+    margin-right: 40px;
+    width: 45%;
+}
+
+footer{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    padding-top: 9px;
+    background-color:  #04293A;
+}
+
+
+@media (max-width:768){
+    .form-container{
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    
 }
