@@ -33,15 +33,27 @@
     padding-right: 0;
 
 }
+.email{
+    color: #064663;
+    font-size: 5rem;
+    padding-left: 4px;
+    padding-top: 1rem;
+    padding-bottom: 33px;
+    
+}
+.email:hover{
+    color:#ECB365ff;
+    background-color: #041C32ff;
+    border-radius: 2rem;
+    
+}
+
 
 .sidebar li {
     margin-bottom: 10px;
 }
 
-.sidebar img {
-    width: 24px;
-    margin-right: 10px;
-}
+
 
 @media (max-width:768){
     .sidebar{
