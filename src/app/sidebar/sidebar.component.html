@@ -11,24 +11,32 @@
     <div class="sidebar">
         <ul>
             <li>
-                <div class="bi">
+                <div class="bi" 
+                    [ngClass] = "{'active': activeIcon ==='home'}"
+                    (click)=" setActive('home')">
                     <i class="bi bi-house-door-fill" onclick="location.href='#home'"></i> 
                 </div>
                 
             </li>
             <li>
-                <div class="bi">
-                    <i class="bi bi-file-person-fill"onclick="location.href='#about'"></i>
+                <div class="bi"
+                [ngClass] = "{'active': activeIcon ==='about'}"
+                    (click)="setActive('about')">
+                    <i class="bi bi-file-person-fill" onclick="location.href='#about'"></i>
                 </div>
                 
             </li>
             <li>
-                <div class="bi">
+                <div class="bi"
+                [ngClass] = "{'active': activeIcon ==='skills'}"
+                    (click)=" setActive('skils')">
                     <i class="bi bi-gear-fill" onclick="location.href='#skills'"></i>
                 </div>
             </li>
             <li>
-                <div class="email">
+                <div class="email"
+                [ngClass] = "{'active': activeIcon ==='contact'}"
+                    (click)=" setActive('contact')">
                     <img src="assets/3669372_contact_ic_mail_icon.svg" onclick="location.href='#contact'">
                 </div>
             </li>

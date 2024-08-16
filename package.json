@@ -22,6 +22,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.3.0-beta3",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "bootstrap-icons": "^1.11.3",
+    "emailjs-com": "^3.2.0",
     "firebase": "^10.12.1",
     "primeng": "^17.18.5",
     "rxjs": "~7.8.0",
