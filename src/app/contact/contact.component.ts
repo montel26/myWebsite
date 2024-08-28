@@ -1,54 +1,51 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators} from "@angular/forms";
-import emailjs, {EmailJSResponseStatus} from 'emailjs-com';
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ServiceService } from '../services/service.service';  // Import the service
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-
-  constructor(private fb: FormBuilder){
+  constructor(private fb: FormBuilder, private serviceService: ServiceService) {  // Inject the service
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
   }
-  ngOnInit():void{
-    this.intializeEmail();
+
+  ngOnInit(): void { }
+
+  downloadCV(): void {
+    // Implement logic to download the CV, for example:
+    window.open('path-to-cv.pdf', '_blank');
   }
 
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      const formValues = this.contactForm.value;
 
-  intializeEmail():void{
-    emailjs.init('njmYilLbTb48AiG2a')
-  }
+      this.serviceService.sendEmail(formValues)
+        .then((response) => {
+          console.log('Email sent successfully!', response.status, response.text);
+          // You can show a success message to the user here
+        })
+        .catch((error) => {
+          console.error('Failed to send email.', error);
+          
+          // You can show an error message to the user here
+        });
 
-  onSubmit(): void{
-    if(this.contactForm.valid){
-      const formValues =  this.contactForm.value;
-
-
-      //using emailjs
-
-      let serviceID: string = "service_7bb6yfi";
-      let templateID: string = "template_mfv4877";
-      // let userID:string = "F2sm90Xa-LnJHsCusQxRg";
-
-
-      emailjs.send(serviceID, templateID,{
-        to_name: "Mr Wood",
-        from_name: formValues.name,
-        message: formValues.email,
-
-      });
-      
+    } else {
+      console.log('Form is not valid');
+      // Optionally show validation errors to the user
     }
   }
-
 }
+
+

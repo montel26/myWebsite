@@ -9,8 +9,10 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
+import { ServiceService } from './services/service.service'; 
 
 import { ButtonModule } from 'primeng/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,11 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     InputTextareaModule,
+    ReactiveFormsModule, 
+    FormsModule, 
     ButtonModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
