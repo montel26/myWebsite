@@ -22,9 +22,12 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void { }
 
   downloadCV(): void {
-    // Implement logic to download the CV, for example:
-    window.open("src\assets\MontelResume.pdf", '_blank');
-  }
+    const link = document.createElement('a');
+    link.href = "assets/MontelResume.pdf"; // Corrected path for Angular
+    link.download = "MontelResume.pdf"; // Set the name of the downloaded file
+    link.click();
+}
+
 
   onSubmit(): void {
     if (this.contactForm.valid) {
