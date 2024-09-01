@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit {
 
   downloadCV(): void {
     // Implement logic to download the CV, for example:
-    window.open('path-to-cv.pdf', '_blank');
+    window.open("src\assets\MontelResume.pdf", '_blank');
   }
 
   onSubmit(): void {
