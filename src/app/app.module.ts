@@ -13,6 +13,8 @@ import { ServiceService } from './services/service.service';
 
 import { ButtonModule } from 'primeng/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { VideoComponent } from './video/video.component';
+import { KinectViewerComponent } from './kinect-viewer/kinect-viewer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SkillsComponent,
     SidebarComponent,
     HomeComponent,
+    // VideoComponent,
+    KinectViewerComponent,
   ],
   imports: [
     BrowserModule,
