@@ -5,7 +5,7 @@ import GUI from 'lil-gui';
 @Component({
   selector: 'app-kinect-viewer',
   templateUrl: './kinect-viewer.component.html',
-  styleUrls: ['./kinect-viewer.component.css']
+  styleUrls: ['./kinect-viewer.component.scss']
 })
 export class KinectViewerComponent implements OnInit {
 
