@@ -1,8 +1,10 @@
 <!-- kinect-viewer.component.html -->
-<video id="video" loop muted crossorigin="anonymous" playsinline style="display:none">
-    <source src="textures/kinect.webm">
-	<source src="textures/kinect.mp4">
+
+<div #threeContainer class="three-container"></div>
+
+<!-- Video element to be used as a texture for Three.js -->
+<video id="video" loop muted autoplay crossOrigin="anonymous" playsinline style="display: none;">
+  <source src="assets/textures/kinect.webm" type="video/webm">
+  <source src="assets/textures/kinect.mp4" type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-
-<div id="three-container"></div>
-
