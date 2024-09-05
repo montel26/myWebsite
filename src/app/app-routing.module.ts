@@ -9,7 +9,7 @@ import { KinectViewerComponent } from './kinect-viewer/kinect-viewer.component';
 const routes: Routes = [
   {
     path: "",
-    component : KinectViewerComponent
+    component : HomeComponent
   }
 ];
 
