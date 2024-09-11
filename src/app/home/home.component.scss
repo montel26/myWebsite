@@ -23,7 +23,14 @@ body{
 .info{
   padding-top: 13%;
   margin-left: 14%;
-  z-index: 2;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+}
+.vid{
+  position: absolute;
+  // transform: translate(0,-60%);
+  top: 0;
 }
 
 
