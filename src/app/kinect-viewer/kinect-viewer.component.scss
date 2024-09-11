@@ -1,7 +1,16 @@
-#three-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    color: #000;
-  }
+.square-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Width of the square */
+  height: 200px; /* Height of the square */
+  overflow: hidden; /* Ensures the video stays inside the square */
+  background-color: #000; /* Optional: Adds a background color */
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the square without distortion */
+  display: block; /* Ensures the video is visible */
+}

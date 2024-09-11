@@ -17,11 +17,13 @@ p{
 body{
   background-color: #041C32ff;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .info{
   padding-top: 13%;
   margin-left: 14%;
+  z-index: 2;
 }
 
 
