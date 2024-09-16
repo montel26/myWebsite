@@ -15,22 +15,24 @@ p{
  
 }
 body{
-  background-color: #041C32ff;
+  // background-color: #041C32ff;
+  background: none;
   color: #ffffff;
   overflow-x: hidden;
 }
 
 .info{
-  padding-top: 13%;
+  padding-top: 5%;
   margin-left: 14%;
   z-index: 1;
-  position: absolute;
+  // position: absolute;
   top: 50%;
 }
 .vid{
-  position: absolute;
+  position: fixed;
   // transform: translate(0,-60%);
   top: 0;
+  z-index: -1;
 }
 
 
