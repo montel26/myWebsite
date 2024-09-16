@@ -1,5 +1,6 @@
 .sidebar{
-    background-color: #04293A;
+    // background-color: #04293A;
+    background-color: black;
     // background: none;
     color: #fff;
     width: 100px;
@@ -10,7 +11,7 @@
     padding: 0;
 
 }
-.bi{
+.bi, .email{
     color: #064663;
     font-size: 5rem;
     padding-left: 4px;
@@ -34,14 +35,14 @@
     padding-right: 0;
 
 }
-.email{
-    color: #064663;
-    font-size: 5rem;
-    padding-left: 4px;
-    padding-top: 1rem;
-    padding-bottom: 33px;
+// .email{
+//     color: #064663;
+//     font-size: 5rem;
+//     padding-left: 4px;
+//     padding-top: 1rem;
+//     padding-bottom: 33px;
     
-}
+// }
 .email:hover{
     color:#ECB365ff;
     background-color: #041C32ff;
