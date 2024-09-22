@@ -5,44 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-   
 </head>
 <body>
     <div class="sidebar">
         <ul>
             <li>
-                <div class="bi" 
-                    [ngClass] = "{'active': activeIcon ==='home'}"
-                    (click)=" setActive('home')">
+                <div class="bi" data-icon="home" onclick="setActive('home')">
                     <i class="bi bi-house-door-fill" onclick="location.href='#home'"></i> 
                 </div>
-                
             </li>
             <li>
-                <div class="bi"
-                [ngClass] = "{'active': activeIcon ==='about'}"
-                    (click)="setActive('about')">
+                <div class="bi" data-icon="about" onclick="setActive('about')">
                     <i class="bi bi-file-person-fill" onclick="location.href='#about'"></i>
                 </div>
-                
             </li>
             <li>
-                <div class="bi"
-                [ngClass] = "{'active': activeIcon ==='skills'}"
-                    (click)=" setActive('skills')">
+                <div class="bi" data-icon="skills" onclick="setActive('skills')">
                     <i class="bi bi-gear-fill" onclick="location.href='#skills'"></i>
                 </div>
             </li>
             <li>
-                <div class="email"
-                [ngClass] = "{'active': activeIcon ==='calls'}"
-                    (click)=" setActive('contact')">
-                    <img src="assets/3669372_contact_ic_mail_icon.svg" onclick="location.href='#contact'">
+                <div class="bi" data-icon="contact" onclick="setActive('contact')">
+                    <i class="bi bi-envelope-check-fill" onclick="location.href='#contact'"></i>
                 </div>
             </li>
-            
         </ul>
     </div>
-       
 </body>
 </html>

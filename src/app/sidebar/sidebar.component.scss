@@ -1,73 +1,225 @@
-.sidebar{
-    // background-color: #04293A;
+.sidebar {
     background-color: black;
-    // background: none;
     color: #fff;
     width: 100px;
     height: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     padding: 0;
+  }
 
-}
-.bi, .email{
+  .bi, .email {
     color: #064663;
-    font-size: 5rem;
+    font-size: 2rem;
     padding-left: 4px;
     padding-top: 1rem;
     padding-bottom: 33px;
-    
-}
-.bi:hover{
-    color:#ECB365ff;
+    cursor: pointer;
+  }
+
+  .bi:hover, .email:hover {
+    color: #ECB365ff;
     background-color: #041C32ff;
     border-radius: 2rem;
-    
-}
+  }
 
-
-.sidebar ul{
+  .sidebar ul {
     list-style-type: none;
     height: 100vh;
     padding-top: 10vh;
     padding-left: 0;
-    padding-right: 0;
+  }
 
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+
+  .bi.active, .email.active {
+    color: #ECB365;
+    background-color: #041C32;
+    border-radius: 2rem;
+  }
+
+  /* Hamburger menu styles for small screens */
+  .hamburger {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #fff;
+  }
+
+  /* For screens below 768px */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 0;
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+    .sidebar.active {
+      width: 250px;
+      padding-top: 60px;
+      transition: 0.3s;
+    }
+
+    .sidebar ul {
+      padding-top: 0;
+    }
+
+    .sidebar li {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  /* Media query for small devices */
+  @media (max-width: 480px) {
+    .bi, .email {
+      font-size: 1.5rem;
+    }
+
+    .sidebar {
+      padding: 10px;
+    }
+  }
+
+  /* Content Section Styles */
+  .content {
+    margin-left: 120px;
+    padding: 20px;
+  }
+
+  section {
+    padding: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sidebar {
+    background-color: black;
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
 }
-// .email{
-//     color: #064663;
-//     font-size: 5rem;
-//     padding-left: 4px;
-//     padding-top: 1rem;
-//     padding-bottom: 33px;
-    
-// }
-.email:hover{
-    color:#ECB365ff;
+
+.bi, .email {
+    color: #064663;
+    font-size: 5rem; /* Larger size for icons */
+    padding-left: 4px;
+    padding-top: 1rem;
+    padding-bottom: 33px;
+    cursor: pointer;
+}
+
+.bi:hover, .email:hover {
+    color: #ECB365ff;
     background-color: #041C32ff;
     border-radius: 2rem;
-    
 }
 
+.sidebar ul {
+    list-style-type: none;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-left: 0;
+}
 
 .sidebar li {
     margin-bottom: 10px;
 }
 
-.bi.active, .email.active{
+.bi.active, .email.active {
     color: #ECB365;
     background-color: #041C32;
     border-radius: 2rem;
 }
 
-@media (max-width:768){
-    .sidebar{
-        width: 100%;
-        height: auto;
-        padding: 0;
+/* Hamburger menu styles for small screens */
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #fff;
+}
+
+/* For screens below 768px */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        height: 100%;
+        overflow-x: hidden;
     }
-    .sidebar img{
-        width: 20px;
+
+    .hamburger {
+        display: block;
     }
+
+    .sidebar.active {
+        width: 250px;
+        padding-top: 60px;
+        transition: 0.3s;
+    }
+
+    .sidebar ul {
+        padding-top: 0;
+    }
+
+    .sidebar li {
+        display: block;
+        text-align: center;
+    }
+
+    .bi, .email {
+        font-size: 3rem; /* Adjusted size for medium screens */
+    }
+}
+
+/* Media query for small devices */
+@media (max-width: 480px) {
+    .bi, .email {
+        font-size: 2rem; /* Smaller size for mobile */
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+}
+
+/* Content Section Styles */
+.content {
+    margin-left: 120px;
+    padding: 20px;
+}
+
+section {
+    padding: 50px;
+    border-bottom: 1px solid #ddd;
 }

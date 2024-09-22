@@ -1,70 +1,94 @@
-
-h1{
-    color:#ECB365ff;
+h1 {
+  color: #ECB365ff;
 }
 
-p{
+p {
   font-size: 160%;
-  
 }
+
 body {
-  // background-color: #041C32ff;
   background: none;
   color: #ffffff;
-  
 }
 
-.info{
-  margin-top:3%;
+.info {
+  margin-top: 3%;
   margin-left: 28%;
 }
 
-.info h1{
-  margin-top:3%;
+.info h1 {
+  margin-top: 3%;
   margin-left: 30%;
 }
+
 p {
   margin-right: 30%;
   text-align: center;
 }
-.skills-container{
-  margin-top:3%;
+
+.skills-container {
+  margin-top: 3%;
   margin-left: 13%;
-
-
 }
-.heading{
+
+.heading {
   margin-left: 51%;
 }
+
 .skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 15rem;
+  margin-left: 5rem;
   margin-right: 1rem;
-  gap: 2px;
+  gap: 20px; /* Increased gap for better spacing */
 }
 
 .skill {
   border-radius: 8px;
   padding: 20px;
-  width: 8rem;
   text-align: center;
   transition: transform 0.2s;
 }
 
 .skill:hover {
-  transform: scale(1.4);
-}
-.skill i {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: #555;
-}
-.skill span {
-  display: block;
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #333;
+  transform: scale(1.2);
 }
 
+.skill img {
+  max-width: 50%; /* Ensures the images are responsive */
+  height: auto;    /* Maintains aspect ratio */
+}
 
+@media (max-width: 1024px) {
+  .skills {
+      grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns for medium screens */
+      margin-left: 5rem; /* Adjusts left margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+      margin-left: 10%; /* Adjusts margin for smaller screens */
+      text-align: center; /* Center-align text */
+  }
+
+  .skills {
+      grid-template-columns: repeat(1, 1fr); /* Stacks icons in a single column */
+      margin-left: 0; /* Resets left margin */
+  }
+
+  .heading {
+      margin-left: 0; /* Resets left margin */
+      text-align: center; /* Center-align heading */
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+      font-size: 140%; /* Slightly smaller font size for mobile */
+  }
+
+  .skill {
+      padding: 10px; /* Less padding on smaller screens */
+  }
+}
