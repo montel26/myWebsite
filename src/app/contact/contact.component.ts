@@ -23,8 +23,8 @@ export class ContactComponent implements OnInit {
 
   downloadCV(): void {
     const link = document.createElement('a');
-    link.href = "assets/MontelResume.pdf"; // Corrected path for Angular
-    link.download = "MontelResume.pdf"; // Set the name of the downloaded file
+    link.href = "assets/MontelWoodResume.pdf"; // Corrected path for Angular
+    link.download = "MontelWoodResume.pdf"; // Set the name of the downloaded file
     link.click();
 }
 
